@@ -1,7 +1,4 @@
 pipeline {
-  agent {
-    label "jenkins-go"
-  }
   environment {
     ORG               = 'jenkinsxio'
      GITHUB_ORG        = 'jenkins-x-apps'
