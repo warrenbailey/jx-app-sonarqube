@@ -1,6 +1,6 @@
 SHELL := /bin/bash
 GO := GO111MODULE=on GO15VENDOREXPERIMENT=1 goGO15VENDOREXPERIMENT=1 go
-NAME := jx-app-sonarqube1
+NAME := jx-app-sonarqube
 OS := $(shell uname)
 MAIN_GO := main.go
 ROOT_PACKAGE := $(GIT_PROVIDER)/$(ORG)/$(NAME)
