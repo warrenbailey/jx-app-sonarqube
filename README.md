@@ -1,5 +1,5 @@
-#jx-app-sonarqube
+# jx-app-sonarqube
 
-SonarQube app. 
+SonarQube app.
 
 TBD
