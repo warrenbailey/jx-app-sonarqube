@@ -1,4 +1,5 @@
 pipeline {
+  agent any
   environment {
     ORG               = 'jenkinsxio'
      GITHUB_ORG        = 'jenkins-x-apps'
