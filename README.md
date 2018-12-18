@@ -1,5 +1,5 @@
 # jx-app-sonarqube1
 
-SonarQube app. 
+SonarQube app.
 
 TBD
