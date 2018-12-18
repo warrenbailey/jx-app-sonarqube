@@ -1,4 +1,4 @@
-#jx-app-sonarqube1
+# jx-app-sonarqube1
 
 SonarQube app. 
 
