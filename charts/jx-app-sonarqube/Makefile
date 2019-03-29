@@ -2,7 +2,6 @@ CHART_REPO := http://jenkins-x-chartmuseum:8080
 CURRENT=$(pwd)
 NAME := jx-app-sonarqube
 OS := $(shell uname)
-VERSION := $(shell cat ../../VERSION)
 
 build: clean
 	rm -rf requirements.lock
