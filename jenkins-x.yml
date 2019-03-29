@@ -1,0 +1,9 @@
+buildPack: apps
+pipelineConfig:
+  pipelines:
+    release:
+      agent:
+        image: centos:7
+      build:
+        postBuild:
+          - sh: ./updatebot.sh
