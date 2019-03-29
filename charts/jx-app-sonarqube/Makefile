@@ -38,10 +38,9 @@ else ifeq ($(OS),Linux)
 	sed -i -e "s|repository: .*|repository: $(DOCKER_REGISTRY)\/jenkins-x-apps\/$(NAME)|" values.yaml
 	sed -i -e "s/tag: .*/tag: $(VERSION)/" values.yaml
 else
-	echo "platfrom $(OS) not supported to tag with"
+	echo "platform $(OS) not supported to tag with"
 	exit -1
 endif
 	git add --all
 	git commit -m "release $(VERSION)" --allow-empty # if first release then no verion update is performed
 	git tag -fa v$(VERSION) -m "Release version $(VERSION)"
-	git push origin v$(VERSION)
