@@ -1,0 +1,21 @@
+Step: build-step-credential-initializer-c6sq4:
+
+{"level":"warn","ts":1554193965.7538588,"logger":"fallback-logger","caller":"logging/config.go:65","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/backport-container-name-fix\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1554193965.754347,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+Step: build-step-git-source-************-**-app-sonarqube-tekton-buil:
+
+{"level":"warn","ts":1554193966.3655002,"logger":"fallback-logger","caller":"logging/config.go:65","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/backport-container-name-fix\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1554193967.4438648,"logger":"fallback-logger","caller":"git-init/main.go:99","msg":"Successfully cloned \"https://github.com/************/**-app-sonarqube\" @ \"tekton-buildpack\" in path \"/workspace/source\""}
+Step: build-step-place-tools:
+
+Step: build-step-build-build:
+
+go: creating new go.mod: module github.com/************/**-app-sonarqube
+CGO_ENABLED=0 GO111MODULE=on GO15VENDOREXPERIMENT=1 goGO15VENDOREXPERIMENT=1 go build -ldflags '' -o bin/**-app-sonarqube main.go
+Step: build-step-build-helm-build:
+
+No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Adding missing Helm repo: jenkins-x http://chartmuseum.jenkins-x.io
+Successfully added Helm repository jenkins-x.
+Adding missing Helm repo: releases http://jenkins-x-chartmuseum:8080
+Successfully added Helm repository releases.
